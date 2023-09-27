@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Date and Time</title>
+  <script>
+    function showDateTime() {
+      const currentDate = new Date();
+      const dateElement = document.getElementById('date');
+      const timeElement = document.getElementById('time');
+      
+      // Get the date in a human-readable format
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = currentDate.toLocaleDateString('en-US', options);
+      
+      // Get the current time
+      const hours = currentDate.getHours();
+      const minutes = currentDate.getMinutes();
+      const seconds = currentDate.getSeconds();
+      const formattedTime = `${hours}:${minutes}:${seconds}`;
+      
+      // Display the date and time on the page
+      dateElement.textContent = 'Current Date: ' + formattedDate;
+      timeElement.textContent = 'Current Time: ' + formattedTime;
+    }
+
+    function showDate() {
+      showDateTime();
+    }
+
+    function showTime() {
+      showDateTime();
+    }
+  </script>
+</head>
+<body>
+  <h1>Show Date and Time</h1>
+  <p id="date">Current Date: </p>
+  <p id="time">Current Time: </p>
+  <button onclick="showDate()">Show Date</button>
+  <button onclick="showTime()">Show Time</button>
+</body>
+</html>
+

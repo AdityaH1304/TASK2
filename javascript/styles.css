@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    width: 350px;
+    height: 15pc;
+    background-color: rgb(242, 242, 242);
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+  padding: 20px;
+   margin-top: 15pc;
+   border-radius: 5px;
+ align-items: center;
+}
+.main h1{
+    text-align: center;
+    font-style: italic;
+}
+.main button{
+    padding: 5px;
+    background-color: blue;
+    width: 260px;
+    border: 1px;
+    color: aliceblue;
+border-radius: 5px;    
+margin: auto;
+justify-content: center;
+align-items: center;
+}
+.main a{
+    text-decoration: none;
+    
+}
+
+.user{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 5px;
+}
+.users{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+.users input{
+    padding: 8px;
+    width: 200px;
+}
+.btn{
+display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.psd{
+    display: flex;
+    justify-content:center;
+    margin: 10px
+}
+.psd input{
+    margin-right:;
+
+}
+.psd a{
+    margin-left: 50px;
+}
+.end{
+display: flex;
+justify-content: center;
+    text-align: center;
+}
